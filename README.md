@@ -1,14 +1,18 @@
 # ExMink
 
-docker build -t cdesch/ex_mink .
+Sample Elixir Application
 
-docker-compose up
+## Docker Build
+    
+    docker build -t cdesch/ex_mink .
 
-docker-compose run --rm web mix ecto.create
-docker-compose run --rm web mix ecto.migrate
+    docker-compose up
+
+    docker-compose run --rm web mix ecto.create
+    docker-compose run --rm web mix ecto.migrate
 
 
-iex -S mix phx.server
+    iex -S mix phx.server
 
 
 ## Resources
