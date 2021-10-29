@@ -7,10 +7,10 @@ defmodule ExMink.InformationFixtures do
   @doc """
   Generate a about.
   """
-  def about_fixture(attrs \\ %{}) do
+  def about_fixture() do
     %{
-      name: "MYApp",
-      version: 1,
+      name: Atom.to_string(Mix.Project.config()[:app]),
+      version: Mix.Project.config()[:version],
       elixir_version: System.version(),
       status: "online"
     }

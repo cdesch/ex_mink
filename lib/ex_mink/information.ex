@@ -18,8 +18,8 @@ defmodule ExMink.Information do
   """
   def about do
     %{
-      name: "MYApp",
-      version: 1,
+      name: Atom.to_string(Mix.Project.config()[:app]),
+      version: Mix.Project.config()[:version],
       elixir_version: System.version(),
       status: "online"
     }
