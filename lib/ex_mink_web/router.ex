@@ -23,6 +23,11 @@ defmodule ExMinkWeb.Router do
     get "/", PageController, :index
   end
 
+  scope "/api", ExMinkWeb.Api, as: :api do
+    pipe_through :api
+    resources "/about", AboutController
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", ExMinkWeb do
   #   pipe_through :api
