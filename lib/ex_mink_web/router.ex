@@ -1,6 +1,9 @@
 defmodule ExMinkWeb.Router do
   use ExMinkWeb, :router
 
+  forward("/health/live", Healthchex.Probes.Liveness)
+  forward("/health/ready", Healthchex.Probes.Readiness)
+
   pipeline :browser do
     plug :accepts, ["html"]
     plug :fetch_session

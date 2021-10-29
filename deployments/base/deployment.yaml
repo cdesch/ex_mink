@@ -38,4 +38,16 @@ spec:
           limits:
             memory: "512Mi"
             cpu: "350m"
-       
+
+          livenessProbe:
+            httpGet:
+              path: /health/live
+              port: http
+            periodSeconds: 10
+            failureThreshold: 6
+          readinessProbe:
+            httpGet:
+              path: /health/ready
+              port: http
+            periodSeconds: 10
+            failureThreshold: 1       
