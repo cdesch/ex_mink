@@ -1,0 +1,6 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: example-elixir-app
+  labels:
+    name: example-elixir-app

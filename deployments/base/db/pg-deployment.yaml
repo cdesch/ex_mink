@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: postgres
+spec:
+  serviceName: postgresql-db-service
+  selector:
+    matchLabels:
+      app: postgres
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: postgres
+        tier: backend
+    spec:
+      containers:
+        - name: postgres
+          image: postgres:13
+          volumeMounts:
+            - name: postgres-db-disk
+              mountPath: /data
+          # Config from ConfigMap
+          envFrom:
+          - configMapRef:
+              name: postgres-db-config
+  # Volume Claim
+  volumeClaimTemplates:
+    - metadata:
+        name: postgres-db-disk
+      spec:
+        accessModes: ["ReadWriteOnce"]
+        resources:
+          requests:
+            storage: 1Gi

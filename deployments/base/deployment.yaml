@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: elixir-app-deployment
+  labels:
+    app: elixir-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: elixir-app
+  template:
+    metadata:
+      labels:
+        app: elixir-app 
+      annotations:
+        prometheus.io/scrape: 'true'
+        prometheus.io/port: '4000'    
+    spec:
+      containers:
+      - name: elixir-app
+        image: cdesch/ex_mink:latest
+        imagePullPolicy: Always
+        ports:
+        - name: http
+          containerPort: 4000     
+        envFrom:
+        - configMapRef:
+            name: elixir-app-config          
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "150m"
+          limits:
+            memory: "128Mi"
+            cpu: "250m"
+       

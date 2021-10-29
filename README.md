@@ -7,6 +7,8 @@ Sample Elixir Application
     docker build -t cdesch/ex_mink .
 
     docker-compose up
+    docker-compose -f docker-compose-db.yaml up
+    docker-compose -f docker-compose-db.yaml up --force-recreate db
 
     docker-compose run --rm web mix ecto.create
     docker-compose run --rm web mix ecto.migrate
