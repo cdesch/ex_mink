@@ -5,7 +5,8 @@ Sample Elixir Application
 ## Docker Build
     
     docker build -t cdesch/ex_mink .
-
+    docker build -t cdesch/ex_mink . -f Dockerfile.prod
+    docker push cdesch/ex_mink
     docker-compose up
     docker-compose -f docker-compose-db.yaml up
     docker-compose -f docker-compose-db.yaml up --force-recreate db
@@ -16,6 +17,9 @@ Sample Elixir Application
 
     iex -S mix phx.server
 
+
+    kubectl apply -k deployments/overlays/dev
+    kubectl delete -k deployments/overlays/dev
 
 ## Resources
 

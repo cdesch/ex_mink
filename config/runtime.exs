@@ -7,17 +7,28 @@ import Config
 # any compile-time configuration in here, as it won't be applied.
 # The block below contains prod specific runtime configuration.
 if config_env() == :prod do
-  database_url =
-    System.get_env("DATABASE_URL") ||
-      raise """
-      environment variable DATABASE_URL is missing.
-      For example: ecto://USER:PASS@HOST/DATABASE
-      """
+  postgres_host = System.get_env("POSTGRES_HOST") || raise "environment variable POSTGRES_HOST is missing."
+  postgres_port = System.get_env("POSTGRES_PORT") || raise "environment variable POSTGRES_PORT is missing."
+  postgres_db = System.get_env("POSTGRES_DB") || raise "environment variable POSTGRES_DB is missing."
+  postgres_user = System.get_env("POSTGRES_USER") || raise "environment variable POSTGRES_USER is missing."
+  postgres_password = System.get_env("POSTGRES_PASSWORD") || raise "environment variable POSTGRES_PASSWORD is missing."
+
+  # database_url =
+  #   System.get_env("DATABASE_URL") ||
+  #     raise """
+  #     environment variable DATABASE_URL is missing.
+  #     For example: ecto://USER:PASS@HOST/DATABASE
+  #     """
 
   config :ex_mink, ExMink.Repo,
     # ssl: true,
     # socket_options: [:inet6],
-    url: database_url,
+    # url: database_url,
+    username: postgres_user,
+    password: postgres_password,
+    database: postgres_db,
+    hostname: postgres_host,
+    port: postgres_port,
     pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10")
 
   # The secret key base is used to sign/encrypt cookies and other secrets.

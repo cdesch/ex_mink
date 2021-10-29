@@ -5,7 +5,7 @@ metadata:
   labels:
     app: elixir-app
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: elixir-app
@@ -27,11 +27,15 @@ spec:
         envFrom:
         - configMapRef:
             name: elixir-app-config          
+        - secretRef:
+            name: postgres-db-secret     
+        - secretRef:
+            name: elixir-app-secret          
         resources:
           requests:
-            memory: "64Mi"
-            cpu: "150m"
-          limits:
-            memory: "128Mi"
+            memory: "256Mi"
             cpu: "250m"
+          limits:
+            memory: "512Mi"
+            cpu: "350m"
        

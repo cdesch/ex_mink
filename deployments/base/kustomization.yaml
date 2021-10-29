@@ -14,3 +14,13 @@ configMapGenerator:
   - name: app-config
     literals:
       - APP_NAME=elixir-app
+
+
+
+secretGenerator:
+  - name: elixir-app-secret
+    literals:
+      - SECRET_KEY_BASE=ZTRGWHRWQ3Z3MXl0VDZMWnllQkxrdlFZZHBoUmNKUkMwTE9RbjNlSDlDckZEa0hETWVsUHBqNGhMRkJRYVJVOQ==
+  - name: postgres-db-secret
+    literals:
+      - POSTGRES_PASSWORD=VG9wQUFBVG90YWxseVNob3VsZEJlQ2hhbmdlZDMyMQ==

@@ -2,10 +2,12 @@ import Config
 
 # Configure your database
 config :ex_mink, ExMink.Repo,
-  username: "postgres",
+  # username: "cj1",
+  # username: "postgres",
   password: "postgres",
   database: "ex_mink_dev",
-  hostname: "db",
+  hostname: "localhost",
+  # hostname: "db",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
 

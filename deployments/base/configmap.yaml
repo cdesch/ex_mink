@@ -7,4 +7,10 @@ metadata:
 data:
   API_HOST: "0.0.0.0"
   API_PORT: "4000"
-  MIX_ENV: development
+  # MIX_ENV: dev
+  MIX_ENV: prod
+  POSTGRES_HOST: postgres-db-lb
+  POSTGRES_PORT: "5432"
+  POSTGRES_DB: ex_mink_dev
+  POSTGRES_USER: db_user
+  POOL_SIZE: "10"

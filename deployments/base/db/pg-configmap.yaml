@@ -5,7 +5,6 @@ metadata:
   labels:
     app: postgres
 data:
-  POSTGRES_DB: testdb
-  POSTGRES_USER: testdbuser
-  POSTGRES_PASSWORD: testdbuserpassword
+  POSTGRES_DB: ex_mink_dev
+  POSTGRES_USER: db_user
   PGDATA: /data/pgdata
