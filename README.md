@@ -36,3 +36,11 @@ Sample Elixir Application
 
     mix phx.gen.json Information About about name:string version:string status:string --web Api --no-context --no-schema
     mix phx.gen.json Information About about name:string version:string status:string --web Api --no-schema
+
+
+    mix phx.gen.live Animals Canine canines breed:string weight:string average_weight_pounds:float average_weight_kg:float size_category:string
+
+    mix phx.gen.json Animals Canine canines breed:string weight:string average_weight_pounds:float average_weight_kg:float size_category:string --web Api --no-schema
+
+
+Breed	Weight  (pounds)	Avg Weight (pounds)	Avg Weight (kg)	Size Category

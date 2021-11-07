@@ -21,6 +21,13 @@ defmodule ExMinkWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+
+    live "/canines", CanineLive.Index, :index
+    live "/canines/new", CanineLive.Index, :new
+    live "/canines/:id/edit", CanineLive.Index, :edit
+
+    live "/canines/:id", CanineLive.Show, :show
+    live "/canines/:id/show/edit", CanineLive.Show, :edit
   end
 
   scope "/api", ExMinkWeb.Api, as: :api do

@@ -49,7 +49,8 @@ defmodule ExMink.MixProject do
       {:gettext, "~> 0.18"},
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
-      {:healthchex, "~> 0.2"}
+      {:healthchex, "~> 0.2"},
+      {:csv, "~> 2.4"},
     ]
   end
 

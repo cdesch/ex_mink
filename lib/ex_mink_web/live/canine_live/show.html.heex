@@ -1,0 +1,42 @@
+<h1>Show Canine</h1>
+
+<%= if @live_action in [:edit] do %>
+  <%= live_modal ExMinkWeb.CanineLive.FormComponent,
+    id: @canine.id,
+    title: @page_title,
+    action: @live_action,
+    canine: @canine,
+    return_to: Routes.canine_show_path(@socket, :show, @canine) %>
+<% end %>
+
+<ul>
+
+  <li>
+    <strong>Breed:</strong>
+    <%= @canine.breed %>
+  </li>
+
+  <li>
+    <strong>Weight:</strong>
+    <%= @canine.weight %>
+  </li>
+
+  <li>
+    <strong>Average weight pounds:</strong>
+    <%= @canine.average_weight_pounds %>
+  </li>
+
+  <li>
+    <strong>Average weight kg:</strong>
+    <%= @canine.average_weight_kg %>
+  </li>
+
+  <li>
+    <strong>Size category:</strong>
+    <%= @canine.size_category %>
+  </li>
+
+</ul>
+
+<span><%= live_patch "Edit", to: Routes.canine_show_path(@socket, :edit, @canine), class: "button" %></span> |
+<span><%= live_redirect "Back", to: Routes.canine_index_path(@socket, :index) %></span>

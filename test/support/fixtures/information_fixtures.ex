@@ -5,7 +5,7 @@ defmodule ExMink.InformationFixtures do
   """
 
   @doc """
-  Generate a about.
+  Generate a about information
   """
   def about_fixture() do
     %{

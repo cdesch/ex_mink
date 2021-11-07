@@ -1,0 +1,36 @@
+<div>
+  <h2><%= @title %></h2>
+
+  <.form
+    let={f}
+    for={@changeset}
+    id="canine-form"
+    phx-target={@myself}
+    phx-change="validate"
+    phx-submit="save">
+  
+    <%= label f, :breed %>
+    <%= text_input f, :breed %>
+    <%= error_tag f, :breed %>
+  
+    <%= label f, :weight %>
+    <%= text_input f, :weight %>
+    <%= error_tag f, :weight %>
+  
+    <%= label f, :average_weight_pounds %>
+    <%= number_input f, :average_weight_pounds, step: "any" %>
+    <%= error_tag f, :average_weight_pounds %>
+  
+    <%= label f, :average_weight_kg %>
+    <%= number_input f, :average_weight_kg, step: "any" %>
+    <%= error_tag f, :average_weight_kg %>
+  
+    <%= label f, :size_category %>
+    <%= text_input f, :size_category %>
+    <%= error_tag f, :size_category %>
+  
+    <div>
+      <%= submit "Save", phx_disable_with: "Saving..." %>
+    </div>
+  </.form>
+</div>

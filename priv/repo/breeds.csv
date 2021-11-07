@@ -1,0 +1,282 @@
+breed,weight,average_weight_pounds,average_weight_kg,size_category
+Affenpinscher,7-10,8.50,3.86,X-Small
+Biewer Terrier,4-8,6.00,2.72,X-Small
+Bolognese,5.5-9,7.25,3.29,X-Small
+Brussels Griffon,8-10,9.00,4.08,X-Small
+Chihuahua,<6,6.00,2.72,X-Small
+Chinese Crested,8-12,10.00,4.54,X-Small
+Japanese Chin,7-11,9.00,4.08,X-Small
+Maltese,<7,7.00,3.18,X-Small
+Toy Manchester Terrier,<12,12.00,5.44,X-Small
+Miniature Pinscher,8-10,9.00,4.08,X-Small
+Papillon,5-10,7.50,3.40,X-Small
+Pomeranian,3-7,5.00,2.27,X-Small
+Toy Poodle,4-6,5.00,2.27,X-Small
+Russian Toy,<6.5,6.50,2.95,X-Small
+Russian Tsvetnaya Bolonka,4.5-11,7.75,3.52,X-Small
+Silky Terrier,10,10.00,4.54,X-Small
+Toy Fox Terrier,NA,,0.00,X-Small
+Yorkshire Terrier,7,7.00,3.18,X-Small
+American Eskimo Dog,10-20,15.00,6.80,Small
+American Hairless Terrier,12-16,14.00,6.35,Small
+Australian Terrier,15-20,17.50,7.94,Small
+Basenji,22-24,23.00,10.43,Small
+Beagle,20-30,25.00,11.34,Small
+Bedlington Terrier,17-23,20.00,9.07,Small
+Bichon Frise,12-18,15.00,6.80,Small
+Border Terrier,11.5-15.5,13.50,6.12,Small
+Boston Terrier,12-25,18.50,8.39,Small
+Cairn Terrier,13-14,13.50,6.12,Small
+Cardigan Welsh Corgi,25-38,31.50,14.29,Small
+Cavalier King Charles Spaniel,13-18,15.50,7.03,Small
+Cesky Terrier,14-24,19.00,8.62,Small
+Cocker Spaniel,20-30,25.00,11.34,Small
+Coton de Tulear,8-15,11.50,5.22,Small
+Dachshund,11-32,21.50,9.75,Small
+Dandie Dinmont Terrier,18-24,21.00,9.53,Small
+Danish-Swedish Farmdog,15-20,17.50,7.94,Small
+English Toy Spaniel,8-14,11.00,4.99,Small
+French Bulldog,<28,28.00,12.70,Small
+German Spitz,24-26,25.00,11.34,Small
+Glen of Imaal Terrier,32-40,36.00,16.33,Small
+Havanese,7-13,10.00,4.54,Small
+Italian Greyhound,7-14,10.50,4.76,Small
+Jagdterrier,17-22,19.50,8.85,Small
+Japanese Terrier,18-28,23.00,10.43,Small
+Lakeland Terrier,17,17.00,7.71,Small
+Lancashire Heeler,9-17,13.00,5.90,Small
+Lhasa Apso,12-18,15.00,6.80,Small
+Lowchen,15,15.00,6.80,Small
+Standard Manchester Terrier,12-22,17.00,7.71,Small
+Miniature Bull Terrier,18-28,23.00,10.43,Small
+Miniature Schnauzer,11-20,15.50,7.03,Small
+Norfolk Terrier,11-12,11.50,5.22,Small
+Norrbottenspets,20-30,25.00,11.34,Small
+Norwegian Lundehund,20-30,25.00,11.34,Small
+Norwich Terrier,12,12.00,5.44,Small
+Parson Russell Terrier,13-17,15.00,6.80,Small
+Pekingese,14,14.00,6.35,Small
+Pembroke Welsh Corgi,28-30,29.00,13.15,Small
+Peruvian Inca Orchid,8.5-17.5,13.00,5.90,Small
+Miniature Poodle,10-15,12.50,5.67,Small
+Potuguese Podengo Pequeno,9-13,11.00,4.99,Small
+Pug,14-18,16.00,7.26,Small
+Pumi,22-29,25.50,11.57,Small
+Rat Terrier,10-25,17.50,7.94,Small
+Russell Terrier,9-15,12.00,5.44,Small
+Schipperke,10-16,13.00,5.90,Small
+Scottish terrier,18-22,20.00,9.07,Small
+Sealyham Terrier,23-24,23.50,10.66,Small
+Shetland Sheepdog,15-25,20.00,9.07,Small
+Shiba Inu,17-23,20.00,9.07,Small
+Shih Tzu,9-16,12.50,5.67,Small
+Smooth Fox Terrier,15-18,16.50,7.48,Small
+Swedish Vallhund,20-35,27.50,12.47,Small
+Teddy Roosevelt Terrier,8-25,16.00,7.26,Small
+Tibetan Spaniel,9-15,12.00,5.44,Small
+Tibetan Terrier,18-30,24.00,10.89,Small
+Welsh Terrier,20,20.00,9.07,Small
+West Highland White Terrier,15-20,17.50,7.94,Small
+Wire Fox Terrier,15-18,16.50,7.48,Small
+Airedale Terrier,50-70,60.00,27.22,Medium
+Alaska Klee Kai,16-25,20.50,9.30,Medium
+American English Coonhound,45-65,55.00,24.95,Medium
+American Foxhound,60-70,65.00,29.48,Medium
+American Leopard Hound,45-70,57.50,26.08,Medium
+American Staffordshire Terrier,40-70,55.00,24.95,Medium
+American Water Spaniel,25-45,35.00,15.88,Medium
+Appenzeller Sennenhund,48-70,59.00,26.76,Medium
+Australian Cattle Dog,NA,,0.00,Medium
+Australian Kelpie,NA,,0.00,Medium
+Australian Shepherd,40-65,52.50,23.81,Medium
+Australian Stumpy Tail Cattle Dog,32-45,38.50,17.46,Medium
+Barbado da Terceira,46-60,53.00,24.04,Medium
+Barbet,35-65,50.00,22.68,Medium
+Basset Fauve de Bretagne,27-35,31.00,14.06,Medium
+Basset Hound,40-65,52.50,23.81,Medium
+Bavarian Mountain Scent Hound,NA,,0.00,Medium
+Bearded Collie,45-55,50.00,22.68,Medium
+Bergamasca Sheepdog,57-84,70.50,31.98,Medium
+Bluetick Coonhound,45-80,62.50,28.35,Medium
+Bohemian Shepherd,37-60,48.50,22.00,Medium
+Border Collie,30-55,42.50,19.28,Medium
+Boykin Spaniel,25-40,32.50,14.74,Medium
+Braque du Bourbonnais,35-53,44.00,19.96,Medium
+Braque Francais Pyrenean,40-55,47.50,21.55,Medium
+Brittany,30-40,35.00,15.88,Medium
+Bull Terrier,50-70,60.00,27.22,Medium
+Bulldog,40-50,45.00,20.41,Medium
+Canaan Dog,35-55,45.00,20.41,Medium
+Carolina Dog,30-55,45.00,20.41,Medium
+Chinese Shar-Pei,45-60,52.50,23.81,Medium
+Chow Chow,45-70,57.50,26.08,Medium
+Cirneco dell'Etna,17-26,21.50,9.75,Medium
+Clumber Spaniel,NA,,0.00,Medium
+Collie,50-75,62.50,28.35,Medium
+Croatian Sheepdog,29-44,36.50,16.56,Medium
+Czechoslovakian Vlcak,44-57,50.50,22.91,Medium
+Dalmatian,45-70,52.50,23.81,Medium
+Deutscher Wachtelhund,40-55,47.50,21.55,Medium
+Drentsche Patrijshond,48-73,60.50,27.44,Medium
+Drever,35-40,37.50,17.01,Medium
+Dutch Shepherd,42-75,58.50,26.54,Medium
+English Cocker Spaniel,26-34,30.00,13.61,Medium
+English Foxhound,60-75,67.50,30.62,Medium
+English Setter,45-80,62.50,28.35,Medium
+English Springer Spaniel,40-50,45.00,20.41,Medium
+Entlebucher Mountain Dog,40-65,52.50,23.81,Medium
+Eurasier,NA,,0.00,Medium
+Field Spaniel,35-50,42.50,19.28,Medium
+Finnish Lapphund,33-53,43.00,19.50,Medium
+Finnish Spitz,20-33,26.50,12.02,Medium
+Flat-Coated Retriever,60-70,65.00,29.48,Medium
+French Spaniel,50-60,55.00,24.95,Medium
+German Pinscher,25-45,35.00,15.88,Medium
+German Shorthaired Pointer,45-70,57.50,26.08,Medium
+German Wirehaired Pointer,50-70,60.00,27.22,Medium
+Grand Basset Griffon Vendeen,40-45,42.50,19.28,Medium
+Hamiltonstovare,40-75,57.50,26.08,Medium
+Harrier,45-60,52.50,23.81,Medium
+Hokkaido,44-66,55.00,24.95,Medium
+Icelandic Sheepdog,25-30,27.50,12.47,Medium
+Irish terrier,25-27,26.00,11.79,Medium
+Japanese Akitainu,55-75,65.00,29.48,Medium
+Japanese Spitz,10-25,17.50,7.94,Medium
+Jindo,30-50,40.00,18.14,Medium
+Kai Ken,20-40,30.00,13.61,Medium
+Karelian Bear Dog,44-49,46.50,21.09,Medium
+Keeshond,35-45,40.00,18.14,Medium
+Kerry Blue Terrier,33-40,36.50,16.56,Medium
+Kishu Ken,30-60,45.00,20.41,Medium
+Kromfohrlander,20-35,27.50,12.47,Medium
+Lagotto Romagnolo,24-35,29.50,13.38,Medium
+Lapponian Herder,70,70.00,31.75,Medium
+Miniature American Shepherd,20-40,30.00,13.61,Medium
+Mountain Cur,30-60,45.00,20.41,Medium
+Mudi,18-29,23.50,10.66,Medium
+Nederlandse Kooikerhondje,20-30,25.00,11.34,Medium
+Norwegian Buhund,26-40,33.00,14.97,Medium
+Norwegian Elkhound,48-50,49.00,22.23,Medium
+Nova Scotia Duck Tolling Retriever,35-50,42.50,19.28,Medium
+Petit Basset Griffon Vendeen,25-40,32.50,14.74,Medium
+Pharaoh Hound,45-55,50.00,22.68,Medium
+Plott Hound,NA,,0.00,Medium
+Polish Lowland Sheepdog,30-50,40.00,18.14,Medium
+Standard Poodle,40-70,55.00,24.95,Medium
+Porcelaine,55-62,58.50,26.54,Medium
+Portuguese Podengo,44-66,55.00,24.95,Medium
+Portuguese Pointer,35-59,47.00,21.32,Medium
+Potuguese Sheepdog,37.5-59,48.25,21.89,Medium
+Portuguese Water Dog,35-60,47.50,21.55,Medium
+Pudelpointer,45-70,57.50,26.08,Medium
+Puli,25-35,30.00,13.61,Medium
+Pyrenean Shepherd,15-30,22.50,10.21,Medium
+Samoyed,35-65,50.00,22.68,Medium
+Schapendoes,26-55,40.50,18.37,Medium
+Segugio Italiano,40-60,50.00,22.68,Medium
+Shikoku,35-55,45.00,20.41,Medium
+Siberian Husky,35-60,47.50,21.55,Medium
+Skye Terrier,35-45,40.00,18.14,Medium
+Slovakian Wirehaired Pointer,50-65,57.50,26.08,Medium
+Slovensky Kopov,33-44,38.50,17.46,Medium
+Small Munsterlander,40-60,50.00,22.68,Medium
+Soft Coated Wheaten Terrier,30-40,35.00,15.88,Medium
+Spanish Water Dog,31-49,40.00,18.14,Medium
+Stabyhoun,40-60,50.00,22.68,Medium
+Staffordshire Bull Terrier,24-38,31.00,14.06,Medium
+Standard Schnauzer,30-50,40.00,18.14,Medium
+Sussex Spaniel,35-45,40.00,18.14,Medium
+Swedish Lapphund,30-45,3.50,1.59,Medium
+Taiwan Dog,26-40,5.50,2.49,Medium
+Thai Ridgeback,35-75,55.00,24.95,Medium
+Transylvanian Hound,>55,55.00,24.95,Medium
+Treeing Tennessee Brindle,30-50,40.00,18.14,Medium
+Vizsla,44-60,52.00,23.59,Medium
+Volpino Italiano,8-16,12.00,5.44,Medium
+Welsh Springer Spaniel,35-55,45.00,20.41,Medium
+Whippet,25-40,32.50,14.74,Medium
+Wirehaired Pointing Griffon,35-70,52.50,23.81,Medium
+Wirehaired Vizsla,45-65,55.00,24.95,Medium
+Working Kelpie,28-60,44.00,19.96,Medium
+Xoloitzcuintli,30-55,42.50,19.28,Medium
+Yakutian Laika,40-55,47.50,21.55,Medium
+Afghan hound,50-60,55.00,24.95,Large
+Alaskan Malamute,75-85,80.00,36.29,Large
+American Bulldog,60-100,80.00,36.29,Large
+Azawakh,33-55,44.00,19.96,Large
+Beauceron,70-110,90.00,40.82,Large
+Belgian Laekenois,55-65,60.00,27.22,Large
+Belgian Malinois,40-80,60.00,27.22,Large
+Belgian Sheepdog,45-75,60.00,27.22,Large
+Belgian Tervuren,45-75,60.00,27.22,Large
+Berger Picard,50-70,60.00,27.22,Large
+Black and Tan Coonhound,65-110,87.50,39.69,Large
+Black Russian Terrier,80-130,105.00,47.63,Large
+Bloodhound,80-110,95.00,43.09,Large
+Borzoi,60-105,82.50,37.42,Large
+Bouvier des Flandres,70-110,90.00,40.82,Large
+Boxer,65-80,72.50,32.89,Large
+Bracco Italiano,55-90,72.50,32.89,Large
+Briard,55-100,77.50,35.15,Large
+Cane Corso,NA,,0.00,Large
+Catahoula Leopard Dog,50-95,72.50,32.89,Large
+Central Asian Shepherd Dog,88-110,99.00,44.91,Large
+Chesapeake Bay Retriever,55-80,67.50,30.62,Large
+Chinook,50-90,70.00,31.75,Large
+Curly-Coated Retriever,60-95,77.50,35.15,Large
+Doberman Pinscher,60-100,80.00,36.29,Large
+Dogo Argentino,80-100,90.00,40.82,Large
+Estrela Mountain Dog,77-132,104.50,47.40,Large
+German Longhaired Pointer,55-80,67.50,30.62,Large
+German Shepherd Dog,50-90,70.00,31.75,Large
+Giant Schnauzer,55-85,70.00,31.75,Large
+Golden Retriever,55-75,65.00,29.48,Large
+Gordon Setter,45-80,62.50,28.35,Large
+Greyhound,60-70,65.00,29.48,Large
+Hanoverian Scenthound,79-99,89.00,40.37,Large
+Hovawart,65-90,77.50,35.15,Large
+Ibizan Hound,45-50,47.50,21.55,Large
+Irish Red and White Setter,35-60,47.50,21.55,Large
+Irish Setter,60-70,65.00,29.48,Large
+Irish Water Spaniel,45-68,56.50,25.63,Large
+Komondor,80-100,90.00,40.82,Large
+Kuvasz,70-115,92.50,41.96,Large
+Labrador Retriever,55-80,67.50,30.62,Large
+Old English Sheepdog,60-100,80.00,36.29,Large
+Otterhound,80-115,97.50,44.23,Large
+Perro de Presa Canario,84-110,97.00,44.00,Large
+Pointer,45-75,60.00,27.22,Large
+Rafeiro do Alentejo,77-132,104.50,47.40,Large
+Redbone Coonhound,45-70,57.50,26.08,Large
+Rhodesian Ridgeback,70-85,77.50,35.15,Large
+Rottweiler,80-135,107.50,48.76,Large
+Saluki,40-65,52.50,23.81,Large
+Sloughi,35-50,42.50,19.28,Large
+Slovensky Cuvac,68-97,82.50,37.42,Large
+Tornjak,62-110,86.00,39.01,Large
+Tosa,100-200,150.00,68.04,Large
+Treeing Walker Coonhound,50-70,60.00,27.22,Large
+Weimaraner,55-90,72.50,32.89,Large
+Wetterhoun,50-75,62.50,28.35,Large
+Akita,70-130,100.00,45.36,X-Large
+Anatolian Shepherd Dog,80-150,115.00,52.16,X-Large
+Bernese Mountain Dog,70-115,92.50,41.96,X-Large
+Boerboel,150-200,175.00,79.38,X-Large
+Broholmer,90-150,120.00,54.43,X-Large
+Bullmastiff,100-130,115.00,52.16,X-Large
+Caucasian Shepherd Dog,99-170,84.50,38.33,X-Large
+Dogue de Bordeaux,99-110,104.50,47.40,X-Large
+Great Dane,110-175,142.50,64.64,X-Large
+Great Pyrenees,85-100,92.50,41.96,X-Large
+Greater Swiss Mountain Dog,85-140,112.50,51.03,X-Large
+Irish Wolfhound,105-120,112.50,51.03,X-Large
+Leonberger,90-170,130.00,58.97,X-Large
+Mastiff,120-230,175.00,79.38,X-Large
+Neapolitan Mastiff,110-150,130.00,58.97,X-Large
+Newfoundland,100-150,125.00,56.70,X-Large
+Pyrenean Mastiff,120-240,180.00,81.65,X-Large
+Romanian Mioritic shepherd Dog,100-130,115.00,52.16,X-Large
+Saint Bernard,120-180,150.00,68.04,X-Large
+Scottish Deerhound,75-110,92.50,41.96,X-Large
+Spanish Mastiff,140-200,170.00,77.11,X-Large
+Tibetan Mastiff,70-150,110.00,49.90,X-Large

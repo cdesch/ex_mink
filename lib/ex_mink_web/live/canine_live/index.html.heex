@@ -1,0 +1,43 @@
+<h1>Listing Canines</h1>
+
+<%= if @live_action in [:new, :edit] do %>
+  <%= live_modal ExMinkWeb.CanineLive.FormComponent,
+    id: @canine.id || :new,
+    title: @page_title,
+    action: @live_action,
+    canine: @canine,
+    return_to: Routes.canine_index_path(@socket, :index) %>
+<% end %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Breed</th>
+      <th>Weight</th>
+      <th>Average weight pounds</th>
+      <th>Average weight kg</th>
+      <th>Size category</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody id="canines">
+    <%= for canine <- @canines do %>
+      <tr id={"canine-#{canine.id}"}>
+        <td><%= canine.breed %></td>
+        <td><%= canine.weight %></td>
+        <td><%= canine.average_weight_pounds %></td>
+        <td><%= canine.average_weight_kg %></td>
+        <td><%= canine.size_category %></td>
+
+        <td>
+          <span><%= live_redirect "Show", to: Routes.canine_show_path(@socket, :show, canine) %></span>
+          <span><%= live_patch "Edit", to: Routes.canine_index_path(@socket, :edit, canine) %></span>
+          <span><%= link "Delete", to: "#", phx_click: "delete", phx_value_id: canine.id, data: [confirm: "Are you sure?"] %></span>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<span><%= live_patch "New Canine", to: Routes.canine_index_path(@socket, :new) %></span>
