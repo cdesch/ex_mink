@@ -8,6 +8,7 @@ defmodule ExMink.Application do
   @impl true
   def start(_type, _args) do
     children = [
+      ExMink.PromEx,
       # Start the Ecto repository
       ExMink.Repo,
       # Start the Telemetry supervisor

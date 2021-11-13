@@ -1,19 +1,15 @@
-FROM elixir:1.12-alpine
-
-RUN mix local.hex --force
-RUN mix local.rebar --force
-WORKDIR /app
+FROM cdesch/elixir-base:1.12-alpine AS base
 
 COPY mix.exs .
 COPY mix.lock .
 
 RUN mix deps.get
+
 # RUN mix deps.get --only prod
 COPY . .
 
 RUN MIX_ENV=prod mix compile
 RUN MIX_ENV=prod mix assets.deploy
-# RUN mix do compile
 
 
 # RUN mkdir assets

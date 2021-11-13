@@ -18,37 +18,62 @@ spec:
         prometheus.io/port: '4000'    
     spec:
       containers:
-      - name: elixir-app
-        image: cdesch/ex_mink:latest
-        imagePullPolicy: Always
-        ports:
-        - name: http
-          containerPort: 4000     
-        envFrom:
-        - configMapRef:
-            name: elixir-app-config          
-        - secretRef:
-            name: postgres-db-secret     
-        - secretRef:
-            name: elixir-app-secret          
-        resources:
-          requests:
-            memory: "256Mi"
-            cpu: "250m"
-          limits:
-            memory: "512Mi"
-            cpu: "350m"
-        # readinessProbe:
-        #   httpGet:
-        #     path: /health/ready
-        #     port: 4000
-        #   initialDelaySeconds: 5
-        #   periodSeconds: 10
-        #   failureThreshold: 3                   
-        # livenessProbe:
-        #   httpGet:
-        #     path: /health/live
-        #     port: 4000
-        #   initialDelaySeconds: 10  
-        #   periodSeconds: 10
-        #   failureThreshold: 6
+        - name: elixir-app
+          image: cdesch/ex_mink:prod
+          imagePullPolicy: Always
+          ports:
+          - name: http
+            containerPort: 4000     
+          envFrom:
+          - configMapRef:
+              name: elixir-app-config          
+          - secretRef:
+              name: postgres-db-secret     
+          - secretRef:
+              name: elixir-app-secret          
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+            limits:
+              memory: "512Mi"
+              cpu: "350m"
+          # readinessProbe:
+          #   httpGet:
+          #     path: /health/ready
+          #     port: 4000
+          #   initialDelaySeconds: 10
+          #   periodSeconds: 10
+          #   failureThreshold: 3                   
+          # livenessProbe:
+          #   httpGet:
+          #     path: /health/live
+          #     port: 4000
+          #   initialDelaySeconds: 10  
+          #   periodSeconds: 10
+          #   failureThreshold: 6
+          # startupProbe:
+          #   httpGet:
+          #     path: /health/ready
+          #     port: 4000
+          #   failureThreshold: 30
+          #   periodSeconds: 10
+      initContainers:
+        - name: app-db-migration
+          image: cdesch/ex_mink:prod
+          imagePullPolicy: Always
+          command: ["mix", "ecto.migrate"]  
+          envFrom:
+          - configMapRef:
+              name: elixir-app-config          
+          - secretRef:
+              name: postgres-db-secret     
+          - secretRef:
+              name: elixir-app-secret          
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+            limits:
+              memory: "512Mi"
+              cpu: "350m"

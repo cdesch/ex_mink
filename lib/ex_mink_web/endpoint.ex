@@ -31,6 +31,8 @@ defmodule ExMinkWeb.Endpoint do
     plug Phoenix.Ecto.CheckRepoStatus, otp_app: :ex_mink
   end
 
+  plug PromEx.Plug, prom_ex_module: ExMink.PromEx
+
   plug Phoenix.LiveDashboard.RequestLogger,
     param_key: "request_logger",
     cookie_key: "request_logger"

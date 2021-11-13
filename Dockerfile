@@ -1,7 +1,4 @@
-FROM elixir:1.12-alpine
-
-RUN mix local.hex --force
-WORKDIR /app
+FROM cdesch/elixir-base:1.12-alpine
 
 COPY mix.exs .
 COPY mix.lock .

@@ -31,10 +31,11 @@ Reset Database
     mix ecto.reset
 
 ## Docker Build
-    
+
     docker build -t cdesch/ex_mink .
-    docker build -t cdesch/ex_mink . -f Dockerfile.prod
+    docker build -t cdesch/ex_mink:prod . -f Dockerfile.prod
     docker push cdesch/ex_mink
+    docker push cdesch/ex_mink:prod
     docker-compose up
     docker-compose -f docker-compose-db.yaml up
     docker-compose -f docker-compose-db.yaml up --force-recreate db
@@ -42,15 +43,12 @@ Reset Database
     docker-compose run --rm web mix ecto.create
     docker-compose run --rm web mix ecto.migrate
 
-
     iex -S mix phx.server
-
 
     kubectl apply -k deployments/overlays/dev
     kubectl delete -k deployments/overlays/dev
 
 ## Resources
-
 
     https://github.com/akoutmos/prom_ex
 

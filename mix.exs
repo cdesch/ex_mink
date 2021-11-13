@@ -53,6 +53,7 @@ defmodule ExMink.MixProject do
       {:csv, "~> 2.4"},
       {:credo, "~> 1.5", only: [:dev, :test], runtime: false},
       {:scrivener_ecto, "~> 2.0"},
+      {:prom_ex, "~> 1.5.0"},
     ]
   end
 
