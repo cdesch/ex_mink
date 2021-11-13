@@ -51,6 +51,8 @@ defmodule ExMink.MixProject do
       {:plug_cowboy, "~> 2.5"},
       {:healthchex, "~> 0.2"},
       {:csv, "~> 2.4"},
+      {:credo, "~> 1.5", only: [:dev, :test], runtime: false},
+      {:scrivener_ecto, "~> 2.0"},
     ]
   end
 
